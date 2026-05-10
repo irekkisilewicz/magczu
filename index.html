@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Magda Czuła | Singer-Songwriter</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Magda Czuła – London-based singer-songwriter blending folk, soul and acoustic music. Listen, watch videos and explore gallery." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" />
+
+  <style>
+    :root {
+      --dark: #111;
+      --light: #fafafa;
+      --accent: #9b6b43;
+      --muted: #777;
+      --max: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--light);
+      color: #111;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    /* NAV */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.95);
+      border-bottom: 1px solid #e5e5e5;
+      z-index: 100;
+    }
+
+    nav {
+      max-width: var(--max);
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 1.2rem;
+      text-decoration: none;
+      color: #111;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    /* SECTIONS */
+    section {
+      min-height: 100vh;
+      padding: 7rem 1.5rem 4rem;
+      display: flex;
+      align-items: center;
+      scroll-margin-top: 90px; /* FIX FOR FIXED HEADER */
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: auto;
+      width: 100%;
+    }
+
+    /* HERO */
+    .hero {
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("images/hero.jpg");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 1.5rem 0.5rem 0;
+      padding: 0.8rem 2rem;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* ABOUT */
+    .about { background: #fff; }
+
+    /* MUSIC */
+    .music { background: #f2f2f2; }
+
+    .music a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* VIDEOS */
+    .videos { background: #fff; }
+
+    /* GALLERY */
+    .gallery { background: #f7f7f7; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 1rem;
+    }
+
+    .grid img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .grid img:hover {
+      transform: scale(1.03);
+    }
+
+    /* CONTACT */
+    .contact {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+    }
+
+    .contact a {
+      color: #fff;
+      margin: 0 0.7rem;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <strong>Magda Czuła</strong>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#videos">Videos</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <h1>Magda Czuła</h1>
+    <p>Emotive vocals. Introspective lyrics. Music that heals and connects.</p>
+    <a href="#music" class="btn primary">Explore Music</a>
+    <a href="#contact" class="btn">Follow</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <h2>A voice that speaks to the soul</h2>
+    <p>
+      Magda Czuła is a Polish-born singer-songwriter based in London,
+      blending folk, soul, and acoustic music into deeply emotive songs.
+    </p>
+  </div>
+</section>
+
+<section class="music" id="music">
+  <div class="wrap">
+    <h2>Music — Power of Sound</h2>
+    <p>
+      A deeply personal debut album exploring love, hope, and transformation.
+    </p>
+    <a href="https://open.spotify.com/artist/7nUwtXzCAh1uFRqjQpSVeT" target="_blank">Spotify</a>
+    <a href="https://www.amazon.co.uk/Power-Sound-Magda-Czula/dp/B00PK1XKQU" target="_blank">Amazon Music</a>
+    <a href="https://www.reverbnation.com/magdaczula" target="_blank">ReverbNation</a>
+    <a href="https://hotvox.co.uk/artist/magda-czula/" target="_blank">HotVox</a>
+  </div>
+</section>
+
+<section class="videos" id="videos">
+  <div class="wrap">
+    <h2>Videos</h2>
+    <p>Live performances, recordings, and behind-the-scenes content.</p>
+    <a href="https://www.youtube.com/user/magdaczula" target="_blank">Visit YouTube Channel</a>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <a href="images/the_spice_of_life.jpg" target="_blank">
+        <img src="images/the_spice_of_life.jpg" loading="lazy" alt="Magda Czuła live performance at The Spice of Life London">
+      </a>
+      <a href="images/main1.jpg" target="_blank">
+        <img src="images/main1.jpg" loading="lazy" alt="Magda Czuła performing on stage">
+      </a>
+      <a href="images/main2.jpg" target="_blank">
+        <img src="images/main2.jpg" loading="lazy" alt="Magda Czuła acoustic session performance">
+      </a>
+      <a href="images/fly_high.jpg" target="_blank">
+        <img src="images/fly_high.jpg" loading="lazy" alt="Magda Czuła portrait photography">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Connect</h2>
+    <p>Follow for new releases, shows, and updates.</p>
+    <a href="https://www.instagram.com/magdaczula/" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/magdaczula/" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com/user/magdaczula" target="_blank">YouTube</a>
+    <a href="https://open.spotify.com/artist/7nUwtXzCAh1uFRqjQpSVeT" target="_blank">Spotify</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Magda Czuła · All rights reserved · Demo promotional website
+</footer>
+
+</body>
+</html>
